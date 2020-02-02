@@ -1,0 +1,835 @@
+<!-- code by szl  -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>途海网</title>
+<link rel=stylesheet type=text/css href="css/index.css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.jslides.js"></script>
+<script type="text/javascript">
+//顶部菜单选项效果
+	function tmhover(id) {
+    var id = id.id;
+    document.getElementById(id).style.background = '#008CD7';
+}
+
+function tmout(id) {
+    var id = id.id;
+    document.getElementById(id).style.background = 'none';
+}
+function mhover(id) {
+    //鼠标经过选项效果事件
+    var id = id.id;
+
+    var subid = id.substring(0, 2); //判断前2个字符，如hsxxxx
+    switch (subid) {
+    case "hs":
+
+        $("#" + id + "").addClass("hshover2");
+        break;
+    case "hg":
+        $("#" + id + "").addClass("hghover2");
+        break;
+    case "hc":
+        $("#" + id + "").addClass("hchover2");
+        break;
+    default:
+        $("#" + id + "").addClass("hwhover2");
+
+    }
+    $("." + id + "").addClass("hover");
+
+}
+function mout(id) {
+    //鼠标离开选项效果事件
+    id = id.id;
+    var subid = id.substring(0, 2);
+
+    switch (subid) {
+    case "hs":
+        $("#" + id + "").removeClass("hshover2");
+        break;
+    case "hg":
+        $("#" + id + "").removeClass("hghover2");
+        break;
+    case "hc":
+        $("#" + id + "").removeClass("hchover2");
+        break;
+    default:
+        $("#" + id + "").removeClass("hwhover2");
+
+    }
+    $("." + id + "").removeClass("hover");
+}
+
+</script>
+</head>
+
+<body >
+<!--上***********-->
+<div id="top" style=" height:500px; ">
+  <div id="user_opation">
+    <div class="user-nav">
+      <ul style="line-height: 32px; ">
+        <li>您好!欢迎来到途海网</li>
+        <li class="user-login"><a class="user-login2" >登陆</a><a class="user-signup">注册</a></li>
+      </ul>
+    </div>
+    <div class="top-muen">
+      <ul style=" float:right;line-height: 32px; ">
+        <li class="user-info"><a >我的途海</a></li>
+              <li class="user-info">|</li>
+        <li class="user-info"><a >途海APP</a></li>
+        <li class="user-info">|</li>
+        <li class="user-info"><a >微信</a></li>
+        <li class="user-info">|</li>
+        <li class="user-info"><a >服务中心</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="search">
+    <div id="logo"><img src="images/images/logo.png" width="140" height="70" /></div>
+  </div>
+  <div id="full-screen-slider" style="margin-bottom:30px;">
+    <div  style="background:#4C5A65; height:40px;">
+      <div id="meanitem" style="margin:0 auto;width:60%;height:40px;font-family: '微软雅黑'; color:#FFF;">
+        <div id="sss1" onmouseout="javascript:tmout(this);" onmousemove="javascript:tmhover(this);">首页</div>
+        <div id="sss2" onmouseout="javascript:tmout(this);" onmousemove="javascript:tmhover(this);">项目一</div>
+        <div id="sss3" onmouseout="javascript:tmout(this);" onmousemove="javascript:tmhover(this);">项目一</div>
+        <div id="sss4" onmouseout="javascript:tmout(this);" onmousemove="javascript:tmhover(this);">项目一</div>
+        <div id="sss5" onmouseout="javascript:tmout(this);" onmousemove="javascript:tmhover(this);">项目一</div>
+        <div id="sss6" onmouseout="javascript:tmout(this);" onmousemove="javascript:tmhover(this);">项目一</div>
+        <div id="sss7" onmouseout="javascript:tmout(this);" onmousemove="javascript:tmhover(this);">项目一</div>
+      </div>
+    </div>
+		<div style="height:370px; overflow:hidden;width:100%;margin-bottom:2%;">
+    <ul id="slides" >
+      <li style="background:url('images/focusimg/guanggao_1.png') no-repeat center top"><a href="" target="_blank"></a></li>
+      <li style="background:url('images/02.jpg')  no-repeat  center top "><a href="" target="_blank"></a></li>
+    </ul>
+		<div>
+  </div>
+</div>
+<!--中***********-->
+<div id="middle"  style="margin:0 auto; width:1190px;">
+  <!--热门推荐***********-->
+  <div  style="height:420px; padding-bottom:30px;">
+    <div id="title" style=" padding-bottom:10px;"> <span style="color:#8C288B; font-family:'微软雅黑'; font-size:20px; ">热门推荐</span> </div>
+    <div class="sss" ><img src="images/images/images/途海1_07.png">
+      <div class="titles" >
+        <div style="float:left; font-weight:bold;">踏青之旅 游玩购网两不误</div>
+        <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥298.00</span>起</div>
+      </div>
+    </div>
+    <div class="sss"><img src="images/images/images/途海1_07.png">
+      <div class="titles" >
+        <div style="float:left; font-weight:bold;">踏青之旅 游玩购网两不误</div>
+        <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥298.00</span>起</div>
+      </div>
+    </div>
+    <div class="sss" style=" float:left; padding-bottom:18px;">
+      <div  ><img src="images/focusimg/3.png"/>
+        <div class="titles" >
+          <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+          <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+        </div>
+      </div>
+    </div>
+    <div class="sss" style="padding-right:0%;">
+      <div><img src="images/focusimg/4.png" />
+        <div class="titles" >
+          <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+          <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--海玩***********-->
+  <div id="seaplay"   style=" padding-top:30px;">
+    <div id="haiw">
+      <div class="mean" style="color:#FF7900; font-size:20px; ">海玩</div>
+      <div class="mean"  style="margin-left:20%;" >
+        <div class="item">钓鱼</div>
+        <div class="item">赶海</div>
+        <div class="item">下网</div>
+        <div class="item">潜水</div>
+        <div class="item">冲浪</div>
+        <div class="item">篝火</div>
+        <div class="item">漂流瓶</div>
+      </div>
+      <div class="more" style="float:right;">更多海玩    > </div>
+    </div>
+    <div style=" margin-top:20px; height:350px;font-family:'微软雅黑'; ">
+      <div class="seawleft" style="overflow:hidden;	 height:300px;width:20%; float:left;">
+        <div style="height:160px;overflow:hidden;">
+          <div>热门目的地</div>
+          <ul id="haiwss" style="padding:0px;font-size:12px;" >
+            <li>
+              <div id="oitem" onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem" style=" background:url(images/images/cs.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem" style="background:url(images/images/cs2.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="oitem2"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem2" style=" background:url(images/images/cs.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem2" style="background:url(images/images/cs2.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="oitem3"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem3" style=" background:url(images/images/cs.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem3" style="background:url(images/images/cs2.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="oitem4"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem4" style=" background:url(images/images/cs.png) no-repeat; height:18px; width:10px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem4" style="background:url(images/images/cs2.png) no-repeat; height:18px; width:10px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="oitem5"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem5" style=" background:url(images/images/cs.png) no-repeat; height:18px; width:10px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="oitem5" style="background:url(images/images/cs2.png) no-repeat; height:18px; width:10px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="height:160px;" >
+          <div>热门玩法</div>
+          <ul id="haiwss" style="padding:0px;font-size:12px;">
+            <li>
+              <div id="wfitem"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="wfitem" style=" background:url(images/images/cs.png) no-repeat; height:18px; width:10px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="wfitem" style="background:url(images/images/cs2.png) no-repeat; height:18px; width:10px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seawright" style="width:80%;  float:left;">
+        <div class="sss"><img  src="images/focusimg/途海1_09.png">
+          <div class="titles" >
+            <div style="float:left; font-weight:bold;">踏青之旅 游玩购网两不误</div>
+            <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥298.00</span>起</div>
+          </div>
+        </div>
+        <div id="ddds" style=" height:300; padding-bottom:18px;">
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--海宿***********-->
+
+  <div id="seaplay"   style=" padding-top:20px;">
+    <div id="haiw">
+      <div class="mean" style="color:#4FB400; font-size:20px; ">海宿</div>
+      <div class="mean"  style="margin-left:20%;" >
+        <div class="hsitem">钓鱼</div>
+        <div class="hsitem">赶海</div>
+        <div class="hsitem">下网</div>
+        <div class="hsitem">潜水</div>
+        <div class="hsitem">冲浪</div>
+        <div class="hsitem">篝火</div>
+        <div class="hsitem">漂流瓶</div>
+      </div>
+      <div class="more" style="float:right;">更多海宿    > </div>
+    </div>
+    <div style=" margin-top:20px; height:350px;font-family:'微软雅黑'; ">
+      <div class="seawleft" style="overflow:hidden;	 height:300px;width:20%; float:left;">
+        <div style="height:160px;overflow:hidden;">
+          <div>热门目的地</div>
+          <ul id="haiwss" style="padding:0px;font-size:12px;" >
+            <li>
+              <div id="hsoitem"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem" style=" background:url(images/images/cs1_66.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem" style="background:url(images/images/cs1_67.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hsoitem2"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem2" style=" background:url(images/images/cs1_66.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem2" style="background:url(images/images/cs1_67.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hsoitem3"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem3" style=" background:url(images/images/cs1_66.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem3" style="background:url(images/images/cs1_67.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hsoitem4"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem4" style=" background:url(images/images/cs1_66.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem4" style="background:url(images/images/cs1_67.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hsoitem5"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem5" style=" background:url(images/images/cs1_66.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hsoitem5" style="background:url(images/images/cs1_67.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="height:160px;" >
+          <div>热门主题</div>
+          <ul id="haiwss" style="padding:0px;font-size:12px;">
+            <li>
+              <div id="hsztitem"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hsztitem" style=" background:url(images/images/cs1_66.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hsztitem" style="background:url(images/images/cs1_67.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seawright" style="width:80%;  float:left;">
+        <div class="sss"><img  src="images/focusimg/途海1_17.png">
+          <div class="titles" >
+            <div style="float:left; font-weight:bold;">踏青之旅 游玩购网两不误</div>
+            <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥298.00</span>起</div>
+          </div>
+        </div>
+        <div id="ddds" style=" height:300; padding-bottom:18px;">
+          <div  ><img src="images/focusimg/途海1_11.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--海购***********-->
+  <div id="seaplay"   style=" padding-top:20px;">
+    <div id="haiw">
+      <div class="mean" style="color:#1D9DF4; font-size:20px; ">海购</div>
+      <div class="mean"  style="margin-left:20%;" >
+        <div class="hgitem">钓鱼</div>
+        <div class="hgitem">赶海</div>
+        <div class="hgitem">下网</div>
+        <div class="hgitem">潜水</div>
+        <div class="hgitem">冲浪</div>
+        <div class="hgitem">篝火</div>
+        <div class="hgitem">漂流瓶</div>
+      </div>
+      <div class="more" style="float:right;">更多海宿    > </div>
+    </div>
+    <div style=" margin-top:20px; height:350px;font-family:'微软雅黑'; ">
+      <div class="seawleft" style="overflow:hidden;	 height:300px;width:20%; float:left;">
+        <div style="height:160px;overflow:hidden;">
+          <div>热门目的地</div>
+          <ul id="haiwss" style="padding-top:10px;font-size:12px;" >
+            <li>
+              <div id="hgoitem"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem" style=" background:url(images/images/cs1_26.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem" style="background:url(images/images/cs1_29.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hgoitem2"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem2" style=" background:url(images/images/cs1_26.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem2" style="background:url(images/images/cs1_29.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hgoitem3"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem3" style=" background:url(images/images/cs1_26.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem3" style="background:url(images/images/cs1_29.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hgoitem4"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem4" style=" background:url(images/images/cs1_26.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem4" style="background:url(images/images/cs1_29.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hgoitem5"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem5" style=" background:url(images/images/cs1_26.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hgoitem5" style="background:url(images/images/cs1_29.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="height:160px;" >
+          <div>热门国家</div>
+          <ul id="haiwss" style="padding:0px;font-size:12px;">
+            <li>
+              <div id="hggjitem"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hggjitem" style=" background:url(images/images/cs1_26.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hggjitem" style="background:url(images/images/cs1_29.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seawright" style="width:80%;  float:left;">
+        <div class="sss"><img  src="images/focusimg/途海1_09.png">
+          <div class="titles" >
+            <div style="float:left; font-weight:bold;">踏青之旅 游玩购网两不误</div>
+            <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥298.00</span>起</div>
+          </div>
+        </div>
+        <div id="ddds" style=" height:300; padding-bottom:18px;">
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--海吃***********-->
+  <div id="seaplay"   style=" padding-top:20px;">
+    <div id="haiw">
+      <div class="mean" style="color:#BF7454; font-size:20px; ">海吃</div>
+      <div class="mean"  style="margin-left:20%;" >
+        <div class="hcitem">钓鱼</div>
+        <div class="hcitem">赶海</div>
+        <div class="hcitem">下网</div>
+        <div class="hcitem">潜水</div>
+        <div class="hcitem">冲浪</div>
+        <div class="hcitem">篝火</div>
+        <div class="hcitem">漂流瓶</div>
+      </div>
+      <div class="more" style="float:right;">更多海宿    > </div>
+    </div>
+    <div style=" margin-top:20px; height:350px;font-family:'微软雅黑'; ">
+      <div class="seawleft" style="overflow:hidden;	 height:300px;width:20%; float:left;">
+        <div style="height:160px;overflow:hidden;">
+          <div>热门目的地</div>
+          <ul id="haiwss" style="padding:0px;font-size:12px;" >
+            <li>
+              <div id="hcoitem"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem" style=" background:url(images/images/cs1_34.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem" style="background:url(images/images/cs1_36.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hcoitem2"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem2" style=" background:url(images/images/cs1_34.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem2" style="background:url(images/images/cs1_36.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hcoitem3"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem3" style=" background:url(images/images/cs1_34.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem3" style="background:url(images/images/cs1_36.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hcoitem4"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem4" style=" background:url(images/images/cs1_34.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem4" style="background:url(images/images/cs1_36.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="hcoitem5"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem5" style=" background:url(images/images/cs1_34.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hcoitem5" style="background:url(images/images/cs1_36.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="height:160px;" >
+          <div>热门主题</div>
+          <ul id="haiwss" style="padding:0px;font-size:12px;">
+            <li>
+              <div id="hcjditem"  onmouseout="javascript:mout(this);" onmousemove="javascript:mhover(this);" >
+                <div style="height:18px; width:10px; ">
+                  <div class="hcjditem" style=" background:url(images/images/cs1_34.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+                <div  class="orbuts"  style="height:18px;line-height:18px;">上海</div>
+                <div style="height:18px; width:10px; ">
+                  <div class="hcjditem" style="background:url(images/images/cs1_36.png) no-repeat; height:18px; width:11px; display:none;"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seawright" style="width:80%;  float:left;">
+        <div class="sss"><img  src="images/focusimg/途海1_09.png">
+          <div class="titles" >
+            <div style="float:left; font-weight:bold;">踏青之旅 游玩购网两不误</div>
+            <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥298.00</span>起</div>
+          </div>
+        </div>
+        <div id="ddds" style=" height:300; padding-bottom:18px;">
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+          <div  ><img src="images/focusimg/3.png"/>
+            <div class="titles" >
+              <div style="float:left; font-weight:bold;">扬州瘦西湖</div>
+              <div style="float:right;"> <span style="color:#F05900; font-size:18spx">￥168.00</span>起</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--合作商家***********-->
+
+  <div id="hzsj"   style=" padding-top:20px;">
+    <div id="haiw">
+      <div class="mean" style="color:#4B5964; font-size:20px; ">合作商家</div>
+      <div class="more" style="float:right;">更多商家    > </div>
+    </div>
+    <div style=" margin-top:20px; height:150px; ">
+      <div class="sss"><img src="images/images/途海1_40.png"> </div>
+      <div class="sss"><img src="images/images/途海1_42.png"> </div>
+      <div class="sss"><img src="images/images/途海1_44.png"> </div>
+      <div class="sss"><img src="images/images/途海1_46.png"> </div>
+      <div class="sss"><img src="images/images/途海1_48.png"> </div>
+    </div>
+  </div>
+</div>
+<!--下***********-->
+<div id="bottom" style=" height:500px;">
+  <div style="background:#4C5A65; height:250px;">
+    <div class="help" style="margin:0 auto; width:1190px; height:220px;">
+      <div  class="sss2" >
+        <ul id="bbbb" style="font-size:14px;">
+          <li style="padding-bottom:20px; color:#FFF; font-size:14px;">如何付款和发票</li>
+          <li>支付宝网银支付</li>
+          <li>信用卡电话支付</li>
+          <li>门店支付或银行汇款</li>
+          <li>货币抵用和发票</li>
+        </ul>
+      </div>
+      <div  class="sss2" >
+        <ul id="bbbb" style="font-size:14px;">
+          <li style="padding-bottom:20px; color:#FFF; font-size:14px;">如何付款和发票</li>
+          <li>支付宝网银支付</li>
+          <li>信用卡电话支付</li>
+          <li>门店支付或银行汇款</li>
+          <li>货币抵用和发票</li>
+        </ul>
+      </div>
+      <div  class="sss2" >
+        <ul id="bbbb" style="font-size:14px;">
+          <li style="padding-bottom:20px; color:#FFF; font-size:14px;">如何付款和发票</li>
+          <li>支付宝网银支付</li>
+          <li>信用卡电话支付</li>
+          <li>门店支付或银行汇款</li>
+          <li>货币抵用和发票</li>
+        </ul>
+      </div>
+      <div  class="sss2" >
+        <ul id="bbbb" style="font-size:14px;">
+          <li style="padding-bottom:20px; color:#FFF; font-size:14px;">如何付款和发票</li>
+          <li>支付宝网银支付</li>
+          <li>信用卡电话支付</li>
+          <li>门店支付或银行汇款</li>
+          <li>货币抵用和发票</li>
+        </ul>
+      </div>
+      <div  class="sss2" >
+        <ul id="bbbb" style="font-size:14px;">
+          <li style="padding-bottom:20px; color:#FFF; font-size:14px;">如何付款和发票</li>
+          <li>支付宝网银支付</li>
+          <li>信用卡电话支付</li>
+          <li>门店支付或银行汇款</li>
+          <li>货币抵用和发票</li>
+        </ul>
+      </div>
+      <div  class="sss2" style="border-right:none;">
+        <ul id="bbbb" style="font-size:14px;">
+          <li style="padding-bottom:10px; color:#FFF; font-size:14px; margin-left:20px;">扫描微信二维码</li>
+          <li ><img src="images/images/112.png" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div  style=" height:250px; color:#999999; padding-top:30px;font-size:12px;font-family: '微软雅黑';">
+    <div class="other"  style="margin:0 auto;width:1190px; height:220px;">
+      <p style="padding-bottom:10px;text-align:center;">Copyright &copy; 2015 www.fengyoujing.net 杭州环旅有限公司 浙ICP备1400000号 浙ICP证1400000 旅游许可证：L-JA55546</p>
+      <div  style="width:1190px; height:80px;text-align:center; MARGIN-LEFT: 3%; padding-bottom:30px;">
+        <div class="sss"><img  src="images/images/途海1_07.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">上海市旅游行业协会在线分会</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_09.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_11.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_13.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_15.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_17.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_19.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_21.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_23.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+        <div class="sss"><img  src="images/images/途海1_25.png">
+          <div class="titles" >
+            <div style="float:left; width:100px;">网站备案</div>
+          </div>
+        </div>
+      </div>
+      <div   style=" width:1190px; height:85px; overflow:overflow: hidden; text-overflow: ellipsis;">
+        <div style=" width:70px; float:left; color:#222222;"><strong >友情链接：</strong></div>
+        <div style="  width:1120px; height:85px; float:left;">
+          <ul id="ccc" style="margin-top: 0px;padding-left: 0px;" >
+            <li>网易旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+            <li>凤凰网旅游</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
